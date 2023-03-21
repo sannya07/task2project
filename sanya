@@ -1,0 +1,181 @@
+billnumber=int(input("Bill number  :"))
+name=input('Customer name : ')
+while(len(name)>20):
+    name =input("Enter Again:  ")
+phone_number =input('Phone number  :')
+while(len(phone_number)!=10):
+    phone_number = input("Enter Again:   ")
+address=input("Customers address   : ")
+_0=100
+_1=100
+_2=100
+_3=100
+_4=100
+_5=100
+_6=100
+_7=100
+_8=100
+_9=100
+_10=100
+qty=0
+itemcode=0
+listname=["pants","sweater","coats","tank top","jeans","skirt","jacket","hoodie","shirt","shorts","t shirt"]
+listprice=[500,250,900,750,750,600,600,1000,200,250,600]
+listqty=[100,100,100,100,100,100,100,100,100,100,100]
+totalamount=0
+addlist=""
+addprice=0
+print("\n                        **SELECT PTODUCT** \n")
+print("----------------------------------------------------------------------------\n")
+print("Item code       |        Product name          | Price       | Stocks          \n")
+print("-----------------------------------------------------------------------------\n")
+print("       0        |        pants                 | P500.00     |  ", _0, "         |\n")
+print("-------------------------------------------------------------------------------\n")
+print("       1        |        sweater               | P250.00     |  ", _1, "         | \n")
+print("-------------------------------------------------------------------------------\n")
+print("       2        |        coats                 | P900.00     |  ", _2, "         | \n")
+print("---------------------------------------------------------------------------------\n")
+print("       3        |        tank top              | P750.00     |  ", _3, "        | \n")
+print("---------------------------------------------------------------------------------\n")
+print("       4        |        jeans                 | P750.00     |  ", _4, "        | \n")
+print("---------------------------------------------------------------------------------\n")
+print("       5        |        skirt                 | P600.00     |  ", _5, "        | \n")
+print("---------------------------------------------------------------------------------\n")
+print("       6        |        jacket                | P600.00     |  ", _6, "        | \n")
+print("---------------------------------------------------------------------------------\n")
+print("       7        |        hoodie                | P1000.00    |  ", _7, "        | \n")   
+print("---------------------------------------------------------------------------------\n")
+print("       8        |        shirt                 | P200.00     |  ", _8, "        | \n") 
+print("---------------------------------------------------------------------------------\n")
+print("       9        |        shorts                | P250.00     |  ", _9, "        | \n")  
+print("---------------------------------------------------------------------------------\n")
+print("       10       |        t shirt               | P600.00    |  ", _10, "        | \n") 
+add="y"
+while add=="y":
+    itemcode=int(input("\nType Item Code: "))
+    while itemcode>11:
+        itemcode=int(input("Invalid Item Code \n\nType Item Code: "))
+    qty=int(input("Item Quantity: "))
+    if itemcode==0:
+        if qty<=100:
+            _0Total=listprice[0]*qty
+            totalamount+= _0Total
+            addlist+=listname[0]
+            addprice+=listprice[0]
+            print("Product name: ",listname[0],"\nPrice: ",listprice[0],"x",qty,"-",_0Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue
+    elif itemcode==1:
+        if qty<=100:
+            _1Total=listprice[1]*qty
+            totalamount+= _1Total
+            addlist+=listname[1]
+            addprice+=listprice[1]
+            print("Product name: ",listname[1],"\nPrice: ",listprice[1],"x",qty,"-",_1Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue 
+    elif itemcode==2:
+        if qty<=100:
+            _2Total=listprice[2]*qty
+            totalamount+= _2Total
+            addlist+=listname[2]
+            addprice+=listprice[2]
+            print("Product name: ",listname[2],"\nPrice: ",listprice[2],"x",qty,"-",_2Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue  
+    elif itemcode==3:
+        if qty<=100:
+            _3Total=listprice[3]*qty
+            totalamount+= _3Total
+            addlist+=listname[3]
+            addprice+=listprice[3]
+            print("Product name: ",listname[3],"\nPrice: ",listprice[3],"x",qty,"-",_3Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue     
+    elif itemcode==4:
+        if qty<=100:
+            _4Total=listprice[4]*qty
+            totalamount+= _4Total
+            addlist+=listname[4]
+            addprice+=listprice[4]
+            print("Product name: ",listname[4],"\nPrice: ",listprice[4],"x",qty,"-",_4Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue
+    elif itemcode==5:
+        if qty<=100:
+            _5Total=listprice[5]*qty
+            totalamount+= _5Total
+            addlist+=listname[5]
+            addprice+=listprice[5]
+            print("Product name: ",listname[5],"\nPrice: ",listprice[5],"x",qty,"-",_5Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue
+    elif itemcode==6:
+        if qty<=100:
+            _6Total=listprice[6]*qty
+            totalamount+= _6Total
+            addlist+=listname[6]
+            addprice+=listprice[6]
+            print("Product name: ",listname[6],"\nPrice: ",listprice[6],"x",qty,"-",_6Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue
+    elif itemcode==7:  
+        if qty<=100:
+            _7Total=listprice[7]*qty
+            totalamount+= _7Total
+            addlist+=listname[7]
+            addprice+=listprice[7]
+            print("Product name: ",listname[7],"\nPrice: ",listprice[7],"x",qty,"-",_7Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue  
+    elif itemcode==8:
+        if qty<=100:
+            _8Total=listprice[8]*qty
+            totalamount+= _8Total
+            addlist+=listname[8]
+            addprice+=listprice[8]
+            print("Product name: ",listname[8],"\nPrice: ",listprice[8],"x",qty,"-",_8Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue
+    elif itemcode==9:
+        if qty<=100:
+            _9Total=listprice[9]*qty
+            totalamount+= _9Total
+            addlist+=listname[9]
+            addprice+=listprice[9]
+            print("Product name: ",listname[9],"\nPrice: ",listprice[9],"x",qty,"-",_9Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue 
+    elif itemcode==10:
+        if qty<=100:
+            _10Total=listprice[10]*qty
+            totalamount+= _10Total
+            addlist+=listname[10]
+            addprice+=listprice[10]
+            print("Product name: ",listname[10],"\nPrice: ",listprice[6],"x",qty,"-",_10Total)
+        else:
+            print("Insufficient stocks! Please try again")
+            continue
+    else:
+        itemcode= int(input("\nType Item Code to Add: "))
+    add = input("Do you want to Add More Item? (Y/N)- ") 
+print("Total Amount:",totalamount)
+cash=int(input("Enter Cash:"))
+if cash>=totalamount:
+    change=cash-totalamount
+    print("change:",change)
+else:
+    print("Your money is not enough !")
+f=open("data.txt", "a+")
+f.write(str(billnumber)+"|"+name+"|"+str(phone_number)+"|"+address+"|"+str(totalamount)+"\n")
+f.close()
